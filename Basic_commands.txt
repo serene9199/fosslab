@@ -1,0 +1,122 @@
+serene@backbox9199:~$ alias ll='ls'
+serene@backbox9199:~$ ll
+Desktop    first_file.txt  hello          js      Pictures   tips.txt
+Documents  fosslab         hey            js.png  Public     Videos
+Downloads  fosslab1        html_tutorial  Music   Templates
+serene@backbox9199:~$ alias pw='pwd'
+serene@backbox9199:~$ pw
+/home/serene
+serene@backbox9199:~$ cp fosslab/git fosslab1
+cp: omitting directory 'fosslab/git'
+serene@backbox9199:~$ cp fosslab/git/ fosslab1
+cp: omitting directory 'fosslab/git/'
+serene@backbox9199:~$ cp /fosslab/git/ fosslab1
+cp: cannot stat '/fosslab/git/': No such file or directory
+serene@backbox9199:~$ cp test.txt/fosslab1 fosslab
+cp: cannot stat 'test.txt/fosslab1': No such file or directory
+serene@backbox9199:~$ cp fosslab1/test.txt fosslab
+serene@backbox9199:~$ rm fosslab/test.txt
+serene@backbox9199:~$ mkdir trial
+serene@backbox9199:~$ cd trial
+serene@backbox9199:~/trial$ touch new.txt
+serene@backbox9199:~/trial$ cat new.txt
+serene@backbox9199:~/trial$ cat > new.txt
+Hey!
+This is just for a trial.
+Thank you.serene@backbox9199:~/trial$ cat >> new.txt
+I'm just appending this text file again.
+serene@backbox9199:~/trial$ cat new.txt
+Hey!
+This is just for a trial.
+Thank you.I'm just appending this text file again.
+serene@backbox9199:~/trial$ touch num.txt
+serene@backbox9199:~/trial$ cat>num.txt
+10 2 5 4
+90 54 91 98
+20 21 23 24
+1 6 7 8
+serene@backbox9199:~/trial$ sort -nk4 num.txt
+10 2 5 4
+1 6 7 8
+20 21 23 24
+90 54 91 98
+serene@backbox9199:~/trial$ sort -rnk4 num.txt
+90 54 91 98
+20 21 23 24
+1 6 7 8
+10 2 5 4
+serene@backbox9199:~/trial$ man sort
+serene@backbox9199:~/trial$ sort num.txt
+10 2 5 4
+1 6 7 8
+20 21 23 24
+90 54 91 98
+serene@backbox9199:~/trial$ sort num.txt -n
+1 6 7 8
+10 2 5 4
+20 21 23 24
+90 54 91 98
+serene@backbox9199:~/trial$ sort num.txt -n > n.txt
+serene@backbox9199:~/trial$ cat n.txt
+1 6 7 8
+10 2 5 4
+20 21 23 24
+90 54 91 98
+serene@backbox9199:~/trial$ cut -f1 num.txt
+10 2 5 4
+90 54 91 98
+20 21 23 24
+1 6 7 8
+serene@backbox9199:~/trial$ cut -f1 num.txt -d
+cut: option requires an argument -- 'd'
+Try 'cut --help' for more information.
+serene@backbox9199:~/trial$ cut -f1 num.txt -d' '
+10
+90
+20
+1
+serene@backbox9199:~/trial$ cut -c3 num.txt -d' '
+cut: an input delimiter may be specified only when operating on fields
+Try 'cut --help' for more information.
+serene@backbox9199:~/trial$ cut -c3 num.txt 
+ 
+ 
+ 
+6
+serene@backbox9199:~/trial$ cut -c2 num.txt 
+0
+0
+0
+ 
+serene@backbox9199:~/trial$ paste num.txt n.txt
+10 2 5 4	1 6 7 8
+90 54 91 98	10 2 5 4
+20 21 23 24	20 21 23 24
+1 6 7 8	90 54 91 98
+serene@backbox9199:~/trial$ cat n.txt
+1 6 7 8
+10 2 5 4
+20 21 23 24
+90 54 91 98
+serene@backbox9199:~/trial$ cat num.txt
+10 2 5 4
+90 54 91 98
+20 21 23 24
+1 6 7 8
+serene@backbox9199:~/trial$ grep 1 num.txt
+10 2 5 4
+90 54 91 98
+20 21 23 24
+1 6 7 8
+serene@backbox9199:~/trial$ grep 1 num.txt -c
+4
+serene@backbox9199:~/trial$ grep 2 num.txt -c
+2
+serene@backbox9199:~/trial$ grep 3 num.txt -c
+1
+serene@backbox9199:~/trial$ grep 2 num.txt -w
+10 2 5 4
+serene@backbox9199:~/trial$ grep 2 num.txt 
+10 2 5 4
+20 21 23 24
+
