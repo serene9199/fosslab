@@ -1,41 +1,53 @@
 Enter the first no:
-56
+23
 Enter the second no:
-8
-Enter your choice
-1. Addition
-2. Substraction
-3. Multiplication
-4. Division
-1
-result 64
-Do you want to continue?(y/n)
-y
+26
 Enter your choice
 1. Addition
 2. Substraction
 3. Multiplication
 4. Division
 2
-result 48
+result -3
 Do you want to continue?(y/n)
 y
+Enter the first no:
+2
+Enter the second no:
+1
+Enter your choice
+1. Addition
+2. Substraction
+3. Multiplication
+4. Division
+1
+result 3
+Do you want to continue?(y/n)
+y
+Enter the first no:
+3
+Enter the second no:
+5
 Enter your choice
 1. Addition
 2. Substraction
 3. Multiplication
 4. Division
 3
-result 448
+result 15
 Do you want to continue?(y/n)
 y
+Enter the first no:
+5
+Enter the second no:
+2
 Enter your choice
 1. Addition
 2. Substraction
 3. Multiplication
 4. Division
 4
-result 7
+result 2
 Do you want to continue?(y/n)
 n
 

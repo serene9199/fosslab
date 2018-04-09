@@ -2,13 +2,13 @@ clear
 ans=0
 o="y"
 
+while [ $o != "n" ]
+do
 echo "Enter the first no:"
 read n1
 echo "Enter the second no:"
 read n2
 
-while [ $o != "n" ]
-do
 echo "Enter your choice"
 echo "1. Addition"
 echo "2. Substraction"
