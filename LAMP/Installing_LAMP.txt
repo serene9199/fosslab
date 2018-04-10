@@ -1,0 +1,16 @@
+1. Updating linux:
+$sudo apt-get update
+$sudo apt-get dist-upgrade -y
+$sudo reboot
+
+2. Installing the LAMP server:
+$sudo apt-get install lamp-server^ -y
+
+3. Test Apache
+http://localhost
+
+4. Testing PHP
+$sudo nano /var/www/testing.php
+<?php phpinfo(); ?> (inside the file testing.php)
+$sudo service apache2 restart
+http://localhost/testing.php
