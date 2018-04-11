@@ -1,0 +1,4 @@
+str: The valus of x is 10 
+array[2]= l 
+Physics83Chemistry94Maths85
+ Physics: 83
